@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:ital,wght@0,100;1,100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: #ffffff;
+    color: #000;
+    position: relative;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+main {
+    padding: 5px;
+}
+
+main .menu-bar{
+    width: 20%;
+    
+}
+
+.navbar {
+    background: #000;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 9.375rem;
+    z-index: 99;
+    bottom: 0;
+    list-style-type: none;
+    cursor: pointer;
+    
+}
+.navbar li{
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+    padding-top: 14px;
+    padding-bottom: 11px;
+    padding-left: 16px;
+}
+.navbar li:hover{
+    background: #5C5C5C;
+    font-weight: bold;
+}
+.navbar li:first-child{
+    font-weight: bold;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+main .main-container{
+    width: 80%;
+}
+
+.main-container .container{
+    position: relative;
+    display: block;
+}
+
+.container .logo{
+    height: 100%;
+    width: 100%;
+
+}
+.container .logo .container-logo{
+    text-align: center;
+    display: block;
+}
+.logo .container-logo img{
+    width: 310px;
+    height: 122px;
+    object-fit: cover;
+}
+
+.container .content{
+    background-color: #EFEFEF;
+    color: #000;
+    margin-bottom: 40px;
+}
+.container .content .container-content{
+    padding-top: 38px;
+    padding-bottom: 38px;
+    padding-left: 269px;
+    padding-right: 269px;
+    text-align: center;
+}
+.container .list{
+    display: block;
+    position: relative;
+}
+
+.container .list .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .list .row .card:not(:last-child){
+    margin-right: 50px;
+}
+.container .list .row .card .card-content{
+    margin-top: 18px;
+}
+.container .list .row .card .card-content img{
+    float: left;
+    margin-right: 16px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4.9375rem;
+    color: #000;
+    z-index: 99;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 16px;
+}
